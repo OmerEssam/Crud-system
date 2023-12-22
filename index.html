@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />  
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/index-style.css" />
+  </head>
+  <body>
+    <div class="container ss">
+      <h1 class="main-title text-center py-5">Bookmarker</h1>
+      <div class="inputs d-flex justify-content-center flex-column">
+        <div class="d-flex justify-content-center">
+            <h2 class=" hamda text-center py-4">
+                <i class="fa-solid fa-bookmark"></i>
+                Bookmark your favorite sites
+                <i class="fa-solid fa-bookmark"></i>
+            </h2>
+        </div>
+        <div class="siteName pb-4">
+            <i class="fa-solid fa-book-bookmark pe-2"></i>
+            <label for="" class="pb-2">Site Name</label>
+            <input type="text" id="input1" placeholder="Bookmark Name" class="form-control">
+        </div>
+        <div class="siteUrl">
+            <i class="fa-solid fa-link pe-2"></i>
+            <label for="" class="pb-2">Site URL</label>
+            <input type="text" id="input2" placeholder="Website URL" class="form-control">
+        </div>
+        <div class="d-flex justify-content-center m-2">
+            <button class="btn btn-danger d-flex justify-content-center m-4 px-5" onclick="getData()">
+                Submit
+            </button>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <table class="table mt-4 text-center bg-light">
+            <thead>
+                <th class="text-capitalize">index</th>
+                <th class="text-capitalize">Website Name</th>
+                <th class="text-capitalize">Visit</th>
+                <th class="text-capitalize">Delete</th>
+            </thead>
+            <tbody id="tableContent"></tbody>
+        </table>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

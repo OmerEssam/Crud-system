@@ -1,0 +1,22 @@
+body{
+    background-color: #F7ECDE;
+}
+::selection{    
+    background-color: #FEC260;
+}
+.main-title{
+    font-family: 'Pacifico', cursive;;
+    font-size: 50px;
+    border-bottom: 2px dotted black;
+}
+.hamda{
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text ;
+    -webkit-text-fill-color: transparent;
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    width: fit-content;
+}
+.ss{
+    border-bottom: 2px dotted black;
+}
