@@ -26,10 +26,10 @@ function clearData() {
 function display() {
     var cartona = "";
     for (let i = 0; i < ma5zn.length; i++) {
-        cartona += `<tr><td>` + ma5zn[i].pName +`</td>
-            <td id="Url"> `+ ma5zn[i].pUrl + `</td>
+        cartona += `<tr><td>` + i +`</td>
+            <td id="Url"> `+ ma5zn[i].pName + `</td>
             <td>
-                <a  class='btn btn-success'>Visit</a>
+                <button  class='btn btn-success' onclick="visitWebsite('${ma5zn[i].pUrl}') ">Visit</button>
                 </td>
                 <td><button class='btn btn-danger' onclick="deleteItem(`+i+`)">Delete</button></td>
             </tr>`
@@ -42,4 +42,8 @@ function deleteItem(pIndex ){
     ma5zn.splice(pIndex , 1);
     localStorage.setItem("Data",JSON.stringify(ma5zn))
     display();
+}
+
+function visitWebsite(url){
+  return  window.open(url)
 }
